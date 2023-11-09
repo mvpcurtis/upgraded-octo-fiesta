@@ -4,17 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Bio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+            line-height: 150%;
+            color: #333;
+            background-color: #efeee7;
+        }
+        h1 {
+            width: 100%;
+            text-align: center;
+            background-color: grey;
+            color: #efeee7;
+            padding: 1em 0;
+            margin-bottom: 1em;
+        }
+
+        h2 {
+            margin-bottom: 1em;
+        }
+
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+        }
+
+        #aboutme, #contactinfo, img {
+            float: left;
+        }
+
+        #aboutme {
+            width: 68%;
+            margin-right: 2%;
+        }
+
+        #contactinfo {
+            width: 30%;
+        }
+        
+        img {
+            width: 200px;
+            height: 200px;
+            margin-right: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Student Bio</h1>
-    <h2>Curtis Bowen</h2>
-    <img src="assets/images/myself.jpeg" alt="Picture of myself" srcset="" height="200px" width="200px">
-    <p>Hi, my name is Curtis and I'm an aspiring frontend web developer. Feel free to checkout out my gitub <a href="https://github.com/mvpcurtis">here</a>.</p>
-    <h2>Contact Information:</h2>
-    <ul>
-        <li>Email: <a href="#">curtis@bowen.com</a></li>
-        <li>Github: <a href="https://github.com/mvpcurtis">mvpcurtis</a></li>
-        <li>Portfolio: <a href="#">curtisbowen.xyz</a></li>
-    </ul>
+    <div class="container">
+        <div id="aboutme">
+            <h2>Curtis Bowen</h2>
+            <img src="https://placehold.it/200x200" alt="Picture of myself">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum est sunt voluptatibus enim officiis necessitatibus amet atque explicabo. Quos numquam minima fugit vero inventore dolor soluta? Dolores voluptate illo voluptatum, corrupti ea eveniet quibusdam deleniti earum quo vero atque soluta doloremque cupiditate laboriosam suscipit, officia perferendis ipsam recusandae. Explicabo perferendis corporis beatae dicta? </p>
+        </div>
+        <div id="contactinfo">
+            <h2>Contact Information:</h2>
+            <ul>
+                <li>Email: <a href="#">curtis@bowen.com</a></li>
+                <li>Github: <a href="https://github.com/mvpcurtis">mvpcurtis</a></li>
+                <li>Portfolio: <a href="#">curtisbowen.xyz</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
